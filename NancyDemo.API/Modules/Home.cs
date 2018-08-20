@@ -1,10 +1,11 @@
 using Nancy;
-namespace NancyDemo.API.Modules {
-    public class Home : NancyModule {
-        public Home () : base ("Home") {
-            Get ("", async args => {
-                return "Hello Nancy!";
-            });
+namespace NancyDemo.API.Modules
+{
+    public sealed class Home : NancyModule
+    {
+        public Home() : base("Home")
+        {
+            Get("", args => "Hello Nancy!");
         }
     }
 }
